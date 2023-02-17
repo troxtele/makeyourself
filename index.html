@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link
+      rel="shortcut icon"
+      href="https://www.makeyourself.co.uk/assets/favicon-16x16.png"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Site -->
+    <!-- <link rel="stylesheet" href="./css/site.css" /> -->
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <!-- Alpine Js -->
+    <script src="./js/alpine.js"></script>
+    <title>Make Yourself - Corporate Leadership & Presentation Training</title>
+  </head>
+  <body
+    class="relative font-nunito text-default-black appear-animate transition-all duration-1000"
+  >
+    <nav
+      class="nav z-50 left-0 right-0 fixed backdrop-blur-3xl bg-white/80 transition duration-300"
+    >
+      <div class="container">
+        <!-- Samll Screen -->
+        <div class="small_nav relative">
+          <div class="wrapper flex justify-between items-center py-3">
+            <!-- Logo -->
+            <div class="logo">
+              <img
+                class="w-full max-w-[9rem] xs:max-w-[12rem]"
+                src="./images/logo.svg"
+                alt="logo"
+              />
+            </div>
+            <!-- Nav link -->
+            <div class="menu_btn text-2xl">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <!-- Small Nav links -->
+          <ul
+            class="grid bg-default-black backdrop-blur-3xl text-default-para text-base m-auto font-extralight absolute left-0 right-0 top-full"
+          >
+            <li>
+              <a
+                href="#"
+                class="small_nav_link capitalize flex hover:text-default-primary transition-all duration-300 px-4 py-2.5 border-b-[1px] border-stone-300/10 bg-default-sub-hover"
+                >Home</a
+              >
+            </li>
+            <!-- SUB MENU LINK -->
+            <li class="transition-all duration-300 group">
+              <a
+                href="#"
+                class="small_nav_link capitalize flex justify-between items-center gap-1 hover:text-default-primary transition-all duration-300 px-4 py-2.5 border-b-[1px] border-stone-300/10"
+                >courses
+                <i
+                  class="flex justify-center items-center text-xs w-5 h-5 rounded-full border-[1px] border-stone-500 font-extralight"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                    ></path></svg
+                ></i>
+              </a>
+            </li>
+            <!-- SUB MENU LINK -->
+            <li class="group">
+              <a
+                href="#"
+                class="small_nav_link capitalize flex justify-between items-center gap-1 hover:text-default-primary transition-all duration-300 px-4 py-2.5 border-b-[1px] border-stone-300/10"
+                >about
+                <i
+                  class="flex justify-center items-center text-xs w-5 h-5 rounded-full border-[1px] border-stone-500 font-extralight"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                    ></path>
+                  </svg>
+                </i>
+              </a>
+
+              <!-- Sub menu -->
+              <ul
+                class="flex flex-col text-[1rem] absolute bg-default-black text-gray-200 font-extralight z-50 rounded-sm invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-500"
+              >
+                <!-- Sub link -->
+                <li class="group/inner relative">
+                  <a
+                    href="#"
+                    class="py-2 pl-4 pr-10 flex items-center group-hover/inner:bg-default-sub-hover group-hover/inner:text-default-orange transition duration-5 00"
+                  >
+                    Who we are
+                  </a>
+                </li>
+                <li class="group/inner relative">
+                  <a
+                    href="#"
+                    class="py-2 pl-4 pr-10 flex items-center group-hover/inner:bg-default-sub-hover group-hover/inner:text-default-orange transition duration-500"
+                  >
+                    Why choose us?
+                  </a>
+                </li>
+                <li class="group/inner relative">
+                  <a
+                    href="#"
+                    class="py-2 pl-4 pr-10 flex items-center group-hover/inner:bg-default-sub-hover group-hover/inner:text-default-orange transition duration-500"
+                  >
+                    Where we work
+                  </a>
+                </li>
+                <li class="group/inner relative">
+                  <a
+                    href="#"
+                    class="py-2 pl-4 pr-10 flex items-center group-hover/inner:bg-default-sub-hover group-hover/inner:text-default-orange transition duration-500"
+                  >
+                    Meet the team
+                  </a>
+                </li>
+                <li class="group/inner relative">
+                  <a
+                    href="#"
+                    class="py-2 pl-4 pr-10 flex items-center group-hover/inner:bg-default-sub-hover group-hover/inner:text-default-orange transition duration-500"
+                  >
+                    Testimonials
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="small_nav_link capitalize flex hover:text-default-primary transition-all duration-300 px-4 py-2.5 border-b-[1px] border-stone-300/10"
+                >client</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="small_nav_link capitalize flex hover:text-default-primary transition-all duration-300 px-4 py-2.5 border-b-[1px] border-stone-300/10"
+                >blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="small_nav_link capitalize flex hover:text-default-primary transition-all duration-300 px-4 py-2.5 border-b-[1px] border-stone-300/10"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main
+      class="hero_parallax bg-main bg-fixed relative bg-cover bg-no-repeat w-full h-screen before:absolute before:block before:inset-0 before:bg-white/50"
+    >
+      <div class="container w-full h-full relative">
+        <div class="wrapper h-full flex items-center">
+          <!-- Texts -->
+          <div class="texts grid gap-5">
+            <h1 class="wow uppercase font-black text-xl" data-wow-delay=".1s">
+              Corporate Training
+            </h1>
+            <h2
+              class="wow text-4xl md:text-7xl font-black leading-snug md:leading-snug"
+              data-wow-delay=".2s"
+            >
+              Dedicated to <br class="hidden md:block" />
+              developing your <br class="hidden md:block" />
+              people’s
+              <span
+                data-period="2800"
+                data-type='[ "leadership", "presentation", "negotiation", "influence", "storytelling", "presence"]'
+                class="typewrite"
+                ><span class="wrap"></span
+              ></span>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Mission Section -->
+    <section class="border-b border-gray-200 bg-default-sec-bg">
+      <div class="container">
+        <div class="wrapper flex gap-12 flex-col lg:flex-row">
+          <!-- left -->
+          <div
+            class="min-w-[25rem] text-center lg:text-start text-5xl font-black"
+          >
+            <h3 daitting class="text_lines ezd-animtext char-up">
+              Helping people fulfil their potential since 2006
+            </h3>
+          </div>
+          <!-- Right -->
+          <div
+            class="right flex flex-col sm:flex-row gap-10 sm:gap-6 text-lg font-light"
+          >
+            <!-- paras -->
+            <p datitting class="text_lines ezd-animtext char-up">
+              If you are looking to help your people develop their skills in
+              leadership and management, presence and presentation, negotiation
+              and influencing, then we are here to help. Whether you’re a
+              fledgling start-up, a FTSE or a Fortune 500, we help people fulfil
+              their potential.
+            </p>
+            <p class="text_lines ezd-animtext char-up">
+              We know that learning lands best when training is interactive, so
+              interactivity is at the heart of all our learning modules, whether
+              virtual or in-person. We also understand that you might have
+              specific objectives, so we work with you to adapt our sessions to
+              meet those objectives. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Course Categories Section -->
+    <section class="text-center">
+      <div class="container">
+        <div class="wrapper flex flex-col gap-24 justify-center items-center">
+          <!-- Header -->
+          <div class="header">
+            <h2 class="uppercase">our courses</h2>
+          </div>
+          <!-- Content -->
+          <div class="content">
+            <div class="items grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+              <!-- Item -->
+              <div class="item">
+                <a
+                  href="#"
+                  class="item flex flex-col gap-4 justify-center items-center group"
+                >
+                  <div
+                    class="img relative before:block before:absolute before:inset-0 before:bg-orange-600 before:opacity-0 group-hover:before:opacity-90 before:transition before:duration-500 overflow-hidden"
+                  >
+                    <img
+                      class=""
+                      src="./images/course/course-1.jpg"
+                      alt="course-1"
+                    />
+                    <!-- hover text -->
+                    <div
+                      class="w-full flex justify-center z-10 absolute bottom-0 left-1/2 -translate-x-1/2 transition duration-500 text-base group-hover:-translate-y-8 group-hover:opacity-100 opacity-0"
+                    >
+                      <div
+                        class="hover_text text-black text-lg font-extralight px-6 text-center"
+                      >
+                        Click to view all of our
+                        <span class="font-extrabold">Leadership</span>
+                        courses
+                      </div>
+                    </div>
+                  </div>
+                  <!-- text -->
+                  <div class="text font-extralight capitalize text-[1.4rem]">
+                    Leadership
+                  </div>
+                </a>
+              </div>
+              <!-- Item -->
+              <div class="item">
+                <a
+                  href="#"
+                  class="item flex flex-col gap-4 justify-center items-center group"
+                >
+                  <div
+                    class="img relative before:block before:absolute before:inset-0 before:bg-orange-600 before:opacity-0 group-hover:before:opacity-90 before:transition before:duration-500 overflow-hidden"
+                  >
+                    <img
+                      class=""
+                      src="./images/course/course-2.jpg"
+                      alt="course-2"
+                    />
+                    <!-- hover text -->
+                    <div
+                      class="w-full flex justify-center z-10 absolute bottom-0 left-1/2 -translate-x-1/2 transition duration-500 text-base group-hover:-translate-y-8 group-hover:opacity-100 opacity-0"
+                    >
+                      <div
+                        class="hover_text text-black text-lg font-extralight px-6 text-center"
+                      >
+                        Click to view all of our
+                        <span class="font-extrabold">
+                          Presence & Presentation
+                        </span>
+                        courses
+                      </div>
+                    </div>
+                  </div>
+                  <!-- text -->
+                  <div class="text font-extralight capitalize text-[1.4rem]">
+                    Presence & Presentation
+                  </div>
+                </a>
+              </div>
+              <!-- Item -->
+              <div class="item">
+                <a
+                  href="#"
+                  class="item flex flex-col gap-4 justify-center items-center group"
+                >
+                  <div
+                    class="img relative before:block before:absolute before:inset-0 before:bg-orange-600 before:opacity-0 group-hover:before:opacity-90 before:transition before:duration-500 overflow-hidden"
+                  >
+                    <img
+                      class=""
+                      src="./images/course/course-3.jpg"
+                      alt="course-3"
+                    />
+                    <!-- hover text -->
+                    <div
+                      class="w-full flex justify-center z-10 absolute bottom-0 left-1/2 -translate-x-1/2 transition duration-500 text-base group-hover:-translate-y-8 group-hover:opacity-100 opacity-0"
+                    >
+                      <div
+                        class="hover_text text-black text-lg font-extralight px-6 text-center"
+                      >
+                        Click to view all of our
+                        <span class="font-extrabold">storytelling</span> courses
+                      </div>
+                    </div>
+                  </div>
+                  <!-- text -->
+                  <div class="text font-extralight capitalize text-[1.4rem]">
+                    storytelling
+                  </div>
+                </a>
+              </div>
+              <!-- Item -->
+              <div class="item">
+                <a
+                  href="#"
+                  class="item flex flex-col gap-4 justify-center items-center group"
+                >
+                  <div
+                    class="img relative before:block before:absolute before:inset-0 before:bg-orange-600 before:opacity-0 group-hover:before:opacity-90 before:transition before:duration-500 overflow-hidden"
+                  >
+                    <img
+                      class=""
+                      src="./images/course/course-4.jpg"
+                      alt="course-4"
+                    />
+                    <!-- hover text -->
+                    <div
+                      class="w-full flex justify-center z-10 absolute bottom-0 left-1/2 -translate-x-1/2 transition duration-500 text-base group-hover:-translate-y-8 group-hover:opacity-100 opacity-0"
+                    >
+                      <div
+                        class="hover_text text-black text-lg font-extralight px-6 text-center"
+                      >
+                        Click to view all of our
+                        <span class="font-extrabold">Influencing</span> courses
+                      </div>
+                    </div>
+                  </div>
+                  <!-- text -->
+                  <div class="text font-extralight capitalize text-[1.4rem]">
+                    Influencing
+                  </div>
+                </a>
+              </div>
+              <!-- Item -->
+              <div class="item">
+                <a
+                  href="#"
+                  class="item flex flex-col gap-4 justify-center items-center group"
+                >
+                  <div
+                    class="img relative before:block before:absolute before:inset-0 before:bg-orange-600 before:opacity-0 group-hover:before:opacity-90 before:transition before:duration-500 overflow-hidden"
+                  >
+                    <img
+                      class=""
+                      src="./images/course/course-5.jpg"
+                      alt="course-5"
+                    />
+                    <!-- hover text -->
+                    <div
+                      class="w-full flex justify-center z-10 absolute bottom-0 left-1/2 -translate-x-1/2 transition duration-500 text-base group-hover:-translate-y-8 group-hover:opacity-100 opacity-0"
+                    >
+                      <div
+                        class="hover_text text-black text-lg font-extralight px-6 text-center"
+                      >
+                        Click to view all of our
+                        <span class="font-extrabold">Negotiation</span> courses
+                      </div>
+                    </div>
+                  </div>
+                  <!-- text -->
+                  <div class="text font-extralight capitalize text-[1.4rem]">
+                    Negotiation
+                  </div>
+                </a>
+              </div>
+              <!-- Item -->
+              <div class="item">
+                <a
+                  href="#"
+                  class="item flex flex-col gap-4 justify-center items-center group"
+                >
+                  <div
+                    class="img relative before:block before:absolute before:inset-0 before:bg-orange-600 before:opacity-0 group-hover:before:opacity-90 before:transition before:duration-500 overflow-hidden"
+                  >
+                    <img
+                      class=""
+                      src="./images/course/course-6.jpg"
+                      alt="course-6"
+                    />
+                    <!-- hover text -->
+                    <div
+                      class="w-full flex justify-center z-10 absolute bottom-0 left-1/2 -translate-x-1/2 transition duration-500 text-base group-hover:-translate-y-8 group-hover:opacity-100 opacity-0"
+                    >
+                      <div
+                        class="hover_text text-black text-lg font-extralight px-6 text-center"
+                      >
+                        Click to view all of our
+                        <span class="font-extrabold">One to One coaching</span>
+                        courses
+                      </div>
+                    </div>
+                  </div>
+                  <!-- text -->
+                  <div class="text font-extralight capitalize text-[1.4rem]">
+                    One to One coaching
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Us Section -->
+    <section class="text-center border-y border-gray-200 bg-default-sec-bg">
+      <div class="container">
+        <div class="swiper why_us_slider w-full h-full">
+          <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div
+                class="wrapper flex flex-col justify-center items-center gap-4"
+              >
+                <!-- img -->
+                <img src="./images/whyUs/us-1.svg" alt="us-1" />
+                <!-- texts -->
+                <div class="text font-extralight">
+                  <h4 class="text-2xl">We’re experienced</h4>
+                  <p class="text-base">if we teach it, we’ve done it</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div
+                class="wrapper flex flex-col justify-center items-center gap-4"
+              >
+                <!-- img -->
+                <img src="./images/whyUs/us-2.svg" alt="us-2" />
+                <!-- texts -->
+                <div class="text font-extralight">
+                  <h4 class="text-2xl">We’re friendly</h4>
+                  <p class="text-base">
+                    and experienced at working with every type of personality
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div
+                class="wrapper flex flex-col justify-center items-center gap-4"
+              >
+                <!-- img -->
+                <img src="./images/whyUs/us-3.svg" alt="us-3" />
+                <!-- texts -->
+                <div class="text font-extralight">
+                  <h4 class="text-2xl">We’re flexible</h4>
+                  <p class="text-base">
+                    We work with your specific constraints and objectives
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div
+                class="wrapper flex flex-col justify-center items-center gap-4"
+              >
+                <!-- img -->
+                <img src="./images/whyUs/us-5.svg" alt="us-5" />
+                <!-- texts -->
+                <div class="text font-extralight">
+                  <h4 class="text-2xl">We’re focused</h4>
+                  <p class="text-base">
+                    on the individual needs of every participant
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div
+                class="wrapper flex flex-col justify-center items-center gap-4"
+              >
+                <!-- img -->
+                <img src="./images/whyUs/us-6.svg" alt="us-6" />
+                <!-- texts -->
+                <div class="text font-extralight">
+                  <h4 class="text-2xl">We’re engaging</h4>
+                  <p class="text-base">
+                    Interactivity is at the heart of everything we do
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination-wrapper flex justify-center mt-10 w-full">
+          <div class="why_us_pagination text-center"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section -->
+    <section
+      class="testimonial bg-testimonial bg-no-repeat bg-cover relative before:absolute before:block before:inset-0 py-20 before:bg-default-black/70 text-white transition-all duration-1000 h-full"
+    >
+      <div class="container">
+        <div
+          class="wrapper relative flex flex-col gap-10 justify-center items-center"
+        >
+          <!-- header -->
+          <div class="header">
+            <h2 class="">CLIENT TESTIMONIALS</h2>
+          </div>
+          <!-- Testimonial Slider -->
+          <div class="swiper testimonial_slider w-[60rem]">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="texts text-center">
+                  <p class="text-2xl font-extralight">
+                    I'd like to thank you for being such good partners and
+                    making our leadership programme come to life. You delivered
+                    a high-end learning experience and your combination of
+                    professionalism, knowledge and wittiness is remarkable.
+                  </p>
+
+                  <div
+                    class="author font-black text-[0.8rem] uppercase mt-10 tracking-wider"
+                  >
+                    — content platform company
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="texts text-center">
+                  <p class="text-2xl font-extralight">
+                    I'd like to thank you for being such good partners and
+                    making our leadership programme come to life. You delivered
+                    a high-end learning experience and your combination of
+                    professionalism, knowledge and wittiness is remarkable.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eaque ipsum iure, repellendus eveniet tempore, harum magni
+                    optio beatae incidunt quas deserunt cupiditate obcaecati.
+                    Facere cum numquam mollitia eaque quisquam voluptatem ad
+                    autem nemo. At dolorum aut quia est sequi in nam nostrum
+                    atque aperiam, natus consectetur consequuntur iure nihil
+                    culpa necessitatibus blanditiis qui repellat nobis
+                    quibusdam! Optio laboriosam facere veniam, praesentium
+                    suscipit exercitationem repudiandae magni necessitatibus
+                    doloremque vero ex voluptatibus ut, perferendis ea error
+                    odio sit quidem. Ipsam corporis natus deleniti corrupti, nam
+                    quis, molestias ullam, minus blanditiis suscipit tempora
+                    ipsum. Laudantium dolore praesentium molestias? Tempora
+                    ullam nobis consequuntur vero laboriosam ipsa, quam rem
+                    perferendis ex temporibus adipisci, autem assumenda laborum
+                    magnam voluptas? Delectus asperiores non commodi magni
+                    temporibus odit hic sed accusamus expedita provident illo,
+                    harum dignissimos odio saepe. Dolor, tempore exercitationem!
+                    Ipsa assumenda eligendi voluptatem voluptatibus, temporibus
+                    totam ab quod minus accusantium optio dolores accusamus illo
+                    eius voluptates distinctio, molestiae repellat nostrum ipsum
+                    nihil? Unde dicta voluptatem, ex quibusdam, possimus libero
+                    pariatur accusantium quas natus quidem ullam tempore? Maxime
+                    nulla dolores cumque provident quis optio accusantium
+                    suscipit repellendus, eos molestias itaque tempore autem
+                    perferendis, dolorem neque illum nobis unde odio dignissimos
+                    exercitationem quasi consequatur magni sequi quod? Illum,
+                    quos! Voluptatem, hic? Ea nihil velit accusamus neque
+                    reiciendis eos doloribus. Fuga atque amet in natus expedita
+                    qui voluptatem alias vitae illo quaerat? Explicabo veniam
+                    sunt saepe quaerat tempore suscipit, similique perspiciatis?
+                    Esse repellat assumenda eos quisquam ea illo? Incidunt omnis
+                    placeat ipsa, fuga dignissimos dolorem dicta mollitia sequi
+                    harum ut vero fugit? Exercitationem quas nisi corporis,
+                    doloribus quam sint, adipisci labore assumenda repudiandae
+                    modi velit eaque sunt qui, numquam quis vitae magnam ullam
+                    cum voluptate saepe sed deleniti. Vel maxime quos ea? Non
+                    accusamus vero voluptatibus iste ipsa quo corrupti molestias
+                    iure modi sunt ad, quia similique omnis impedit.
+                  </p>
+
+                  <div
+                    class="author font-black text-[0.8rem] uppercase mt-10 tracking-wider"
+                  >
+                    — content platform company
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="testi_pagination flex justify-center w-full mt-12"
+            ></div>
+            <div class="next"></div>
+            <div class="prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Client Section -->
+    <section>
+      <div class="container">
+        <!-- Swiper -->
+        <div class="swiper client_slider">
+          <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-1.jpg" alt="client-1" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-2.jpg" alt="client-2" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-3.jpg" alt="client-3" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-4.jpg" alt="client-4" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-5.jpg" alt="client-5" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-6.jpg" alt="client-6" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-7.jpg" alt="client-7" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-8.jpg" alt="client-8" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-9.jpg" alt="client-9" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-10.jpg" alt="client-10" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-11.jpg" alt="client-11" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-12.jpg" alt="client-12" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-13.jpg" alt="client-13" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-14.jpg" alt="client-14" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-15.jpg" alt="client-15" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-16.jpg" alt="client-16" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-17.jpg" alt="client-17" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-18.jpg" alt="client-18" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-19.jpg" alt="client-19" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-20.jpg" alt="client-20" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-21.jpg" alt="client-21" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-22.jpg" alt="client-22" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-23.jpg" alt="client-23" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-24.jpg" alt="client-24" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-25.jpg" alt="client-25" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-26.jpg" alt="client-26" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-27.jpg" alt="client-27" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-28.jpg" alt="client-28" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-29.jpg" alt="client-29" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-30.jpg" alt="client-30" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-31.jpg" alt="client-31" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-32.jpg" alt="client-32" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-33.jpg" alt="client-33" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-34.jpg" alt="client-34" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-35.jpg" alt="client-35" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-36.jpg" alt="client-36" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-37.jpg" alt="client-37" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-38.jpg" alt="client-38" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-39.jpg" alt="client-39" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-40.jpg" alt="client-40" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-41.jpg" alt="client-41" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-42.jpg" alt="client-42" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-43.jpg" alt="client-43" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-44.jpg" alt="client-44" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-45.jpg" alt="client-45" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-46.jpg" alt="client-46" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-47.jpg" alt="client-47" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-48.jpg" alt="client-48" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-49.jpg" alt="client-49" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-50.jpg" alt="client-50" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-51.jpg" alt="client-51" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-52.jpg" alt="client-52" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-53.jpg" alt="client-53" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-54.jpg" alt="client-54" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-55.jpg" alt="client-55" />
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img src="./images/client/client-56.jpg" alt="client-56" />
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+
+        <div class="client_pagination flex justify-center mt-12"></div>
+      </div>
+    </section>
+    <!-- Blog Section -->
+    <section>
+      <div class="container">
+        <div class="wrapper flex flex-col gap-20 justify-center items-center">
+          <!-- Header -->
+          <div
+            class="header w-full flex flex-col gap-1 justify-center items-center"
+          >
+            <h2 class="uppercase">our blog</h2>
+            <!-- all blogs link -->
+            <div class="btn_wrapper w-full flex justify-end">
+              <a
+                href="#"
+                class="blog_btn relative after:block after:absolute after:left-0 after:w-full after:h-[1px] after:bg-default-btn-after after:transform hover:after:transform-none after:scale-x-0 hover:scale-100 after:transition after:duration-[0.25s] after:origin-[right_center] hover:after:origin-[left_center] uppercase font-black text-[0.75rem] text-default-black opacity-75 transition duration-300 hover:opacity-100 tracking-widest"
+                >our blog <i class="fa fa-angle-right" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Items -->
+          <div class="items grid gap-5 sm:grid-cols-2 md:grid-cols-3">
+            <!-- Item -->
+            <div class="item flex flex-col gap-6">
+              <!-- Img -->
+              <a
+                href="#"
+                class="img overflow-hidden relative before:block before:absolute before:inset-0 hover:before:bg-white/20 before:h-full before:w-full before:z-20 before:transition before:duration-300 group"
+              >
+                <img
+                  class="max-h-[450px] max-w-[675px] w-full h-full scale-[1.001] group-hover:scale-105 transition duration-[2000ms]"
+                  src="./images/blog/blog-1.jpg"
+                  alt="blog-1"
+                />
+              </a>
+              <!-- texts -->
+              <div class="texts font-extralight flex flex-col gap-5">
+                <div class="main_text">
+                  <a href="#" class="text-2xl transi"
+                    >The 2019 IPA Speakers’ Cup</a
+                  >
+                  <div class="date text-base">September 2019</div>
+                </div>
+                <!-- paras -->
+                <div class="paras flex flex-col gap-5 text-[0.95rem]">
+                  <p>
+                    We’re delighted to be partnering again with the IPA for the
+                    third IPA Speaker’s Cup.
+                  </p>
+                  <p>
+                    Following on from the success of the two previous
+                    competitions, we are running a day where speakers who...
+                  </p>
+                </div>
+              </div>
+              <!-- Button -->
+              <div class="btn_wrapper">
+                <a
+                  href="#"
+                  class="blog_btn relative after:block after:absolute after:left-0 after:w-full after:h-[1px] after:bg-default-btn-after after:transform hover:after:transform-none after:scale-x-0 hover:scale-100 after:transition after:duration-[0.25s] after:origin-[right_center] hover:after:origin-[left_center] uppercase font-black text-[0.75rem] text-default-black opacity-75 transition duration-300 hover:opacity-100 tracking-widest"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="item flex flex-col gap-6">
+              <!-- Img -->
+              <a
+                href="#"
+                class="img overflow-hidden relative before:block before:absolute before:inset-0 hover:before:bg-white/20 before:h-full before:w-full before:z-20 before:transition before:duration-300 group"
+              >
+                <img
+                  class="max-h-[450px] max-w-[675px] w-full h-full scale-[1.001] group-hover:scale-105 transition duration-[2000ms]"
+                  src="./images/blog/blog-2.png"
+                  alt="blog-2"
+                />
+              </a>
+              <!-- texts -->
+              <div class="texts font-extralight flex flex-col gap-5">
+                <div class="main_text">
+                  <a href="#" class="text-2xl transi"
+                    >How to interrupt politely on Zoom</a
+                  >
+                  <div class="date text-base">June 2020</div>
+                </div>
+                <!-- paras -->
+                <div class="paras flex flex-col gap-5 text-[0.95rem]">
+                  <p>
+                    We’re hearing that some people are finding it tough to
+                    interrupt politely on Zoom, Teams, Skype etc.
+                  </p>
+                  <p>
+                    We all know colleagues who have no problem talking over
+                    others. We also know colleagues...
+                  </p>
+                </div>
+              </div>
+              <!-- Button -->
+              <div class="btn_wrapper">
+                <a
+                  href="#"
+                  class="blog_btn relative after:block after:absolute after:left-0 after:w-full after:h-[1px] after:bg-default-btn-after after:transform hover:after:transform-none after:scale-x-0 hover:scale-100 after:transition after:duration-[0.25s] after:origin-[right_center] hover:after:origin-[left_center] uppercase font-black text-[0.75rem] text-default-black opacity-75 transition duration-300 hover:opacity-100 tracking-widest"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="item flex flex-col gap-6">
+              <!-- Img -->
+              <a
+                href="#"
+                class="img overflow-hidden relative before:block before:absolute before:inset-0 hover:before:bg-white/20 before:h-full before:w-full before:z-20 before:transition before:duration-300 group"
+              >
+                <img
+                  class="max-h-[450px] max-w-[675px] w-full h-full scale-[1.001] group-hover:scale-105 transition duration-[2000ms]"
+                  src="./images/blog/blog-3.png"
+                  alt="blog-3"
+                />
+              </a>
+              <!-- texts -->
+              <div class="texts font-extralight flex flex-col gap-5">
+                <div class="main_text">
+                  <a href="#" class="text-2xl transi"
+                    >Tips for great video calls</a
+                  >
+                  <div class="date text-base">September 2020</div>
+                </div>
+                <!-- paras -->
+                <div class="paras flex flex-col gap-5 text-[0.95rem]">
+                  <p>
+                    If you’re working from home, you might well be getting that
+                    work done using Zoom, Teams or WebEx.
+                  </p>
+                  <p>
+                    But we all know that a meeting over video conference is a
+                    lot bumpier than one that’s...
+                  </p>
+                </div>
+              </div>
+              <!-- Button -->
+              <div class="btn_wrapper">
+                <a
+                  href="#"
+                  class="blog_btn relative after:block after:absolute after:left-0 after:w-full after:h-[1px] after:bg-default-btn-after after:transform hover:after:transform-none after:scale-x-0 hover:scale-100 after:transition after:duration-[0.25s] after:origin-[right_center] hover:after:origin-[left_center] uppercase font-black text-[0.75rem] text-default-black opacity-75 transition duration-300 hover:opacity-100 tracking-widest"
+                  >read more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call Action Section -->
+    <section class="bg-default-black text-white text-center">
+      <div class="container flex justify-center">
+        <div class="wrapper flex flex-col items-center gap-6 max-w-[50rem]">
+          <div class="header text-3xl tracking-tight">
+            <h2>Want to discuss your company's requirements?</h2>
+          </div>
+          <!-- Para -->
+          <p class="text-default-para font-extralight text-base">
+            If you’d like to talk to us about your organisation’s training
+            needs, even if you’re not yet fully sure what they are, please get
+            in touch using the form below. Also use this form for general
+            questions.
+          </p>
+
+          <!-- Button -->
+          <div class="btn_wrapper mt-12">
+            <a
+              href="#"
+              class="px-10 py-4 transition duration-300 bg-white/90 hover:bg-white rounded-md text-default-black uppercase font-black"
+              >contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="pt-20 pb-4">
+      <div class="container">
+        <div class="wrapper flex flex-col justify-center items-center gap-16">
+          <!-- Icon Links -->
+          <div class="link_icons flex gap-4">
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/company/make-yourself/about/"
+              title="LinkedIn"
+              target="_blank"
+              class="w-14 h-14 text-base text-white flex justify-center items-center rounded-full bg-default-black/90 hover:bg-default-black transition duration-300"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <!-- Telephone -->
+            <a
+              href="tel:+44 (0)20 7887 2627"
+              title="Call us on +44 (0)20 7887 2627"
+              class="w-14 h-14 text-base text-white flex justify-center items-center rounded-full bg-default-black/90 hover:bg-default-black transition duration-300 rotate-90"
+            >
+              <i class="fa fa-phone-alt" aria-hidden="true"></i>
+            </a>
+          </div>
+          <!-- Copyright & Terms -->
+          <div class="texts font-extralight text-sm grid gap-2 text-center">
+            <!-- Fist -->
+            <div>
+              © Copyright 2023 Make Yourself Limited &nbsp; &nbsp;
+              <a href="/terms-and-conditions" class="hover:underline">
+                Terms &amp; conditions
+              </a>
+              &nbsp;| &nbsp;
+              <a href="/privacy-policy" class="hover:underline">
+                Privacy policy
+              </a>
+
+              &nbsp;| &nbsp;
+              <span
+                class="footer-cookie cursor-pointer hover:underline"
+                onclick="window.CookieModal.show();"
+                >Cookie settings</span
+              >
+
+              &nbsp; &nbsp; ® All rights reserved to Make Yourself Limited
+            </div>
+            <!-- Second -->
+            <p>
+              Make Yourself Limited, Registered Office: The Studio, 29 Seymour
+              Road, East Molesey, Surrey KT8 0PB | Registered Number: 6551846
+              England &amp; Wales
+            </p>
+            <!-- Third -->
+            <div class="footer-copy">
+              Handcrafted by
+              <a href="https://www.cmsystemdesigns.com/" target="_blank"
+                >CM System Designs</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Scroll to Top btn -->
+        <div class="flex justify-end">
+          <div
+            class="scroll_top bg-default-para cursor-pointer transition duration-300 flex justify-center items-center text-default-black mt-10 w-12 h-12 rounded-full shadow-scroll-top hover:shadow-scroll-top-hover"
+          >
+            <i class="fa-solid fa-angle-up"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="./js/SmoothScroll.js"></script>
+    <!-- Animated Js -->
+    <!-- Sliptting Js -->
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script>
+      const target = [...document.querySelectorAll(".text_lines")];
+      target.map((el) => Splitting({ target: target, by: "lines" }));
+    </script>
+    <!-- Wow js -->
+    <script src="./js/wow.min.js"></script>
+    <!-- Typed js -->
+    <script src="./js/typed.min.js"></script>
+    <script src="./js/tp.js"></script>
+    <!--  -->
+
+    <!-- <script src="./js/site.js"></script> -->
+
+    <!-- Main script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+<!--  -->
