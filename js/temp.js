@@ -41,6 +41,8 @@ coursesContainer.addEventListener("click", function () {
 
 // ++++++++++++++++++++++++++
 
+// Footer scroll top
+
 // Scroll to Top Click
 const scrollTopBtn = document.querySelector(".scroll_top");
 
@@ -62,6 +64,14 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("drop-shadow-lg");
     navLinks.map((el) => el.classList.add("py-6"));
     navLinks.map((el) => el.classList.remove("py-4"));
+  }
+  // Scroll to top
+  if (window.scrollY > 100) {
+    scrollTopBtn.classList.add("bottom-14");
+    scrollTopBtn.classList.remove("-bottom-[100px]");
+  } else {
+    scrollTopBtn.classList.add("-bottom-[100px]");
+    scrollTopBtn.classList.remove("bottom-14");
   }
 });
 
